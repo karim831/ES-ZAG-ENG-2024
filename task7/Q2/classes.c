@@ -3,17 +3,17 @@
 #include <time.h>
 int main(){
     int classes[3][10];
-    int num_passed=0,num_failed = 0;
-    int highestGrade =0,lowest_grade = 100;
-    int sum =0;
     srand(time(0));
-    for(int i=0;i<10;i++){
-        for(int j=0;j<3;j++){
+    for(int i=0;i<3;i++){
+        for(int j=0;j<10;j++){
             classes[i][j] = rand()%101;
         }
     }
-    for(int i=0;i<10;i++){
-        for(int j=0;j<3;j++){
+    int num_passed=0,num_failed = 0;
+    int highestGrade =0,lowest_grade = 100;
+    int sum =0;
+    for(int i=0;i<3;i++){
+        for(int j=0;j<10;j++){
             sum+=classes[i][j];
             if(classes[i][j]>highestGrade)
                 highestGrade = classes[i][j];
