@@ -1,0 +1,129 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"11 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task1\traffic_lightening_system\application.c
+[v _main main `(i  1 e 2 0 ]
+"39
+[v _initialization initialization `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"18 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task1\traffic_lightening_system\mcal_layer/gpio_module/gpio.c
+[v _gpio_pin_set_direction gpio_pin_set_direction `(uc  1 e 1 0 ]
+"51
+[v _gpio_pin_set_logic gpio_pin_set_logic `(uc  1 e 1 0 ]
+"109
+[v _gpio_port_initialize gpio_port_initialize `(uc  1 e 1 0 ]
+"120
+[v _gpio_port_set_directions gpio_port_set_directions `(uc  1 e 1 0 ]
+"144
+[v _gpio_port_set_logics gpio_port_set_logics `(uc  1 e 1 0 ]
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"3 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task1\traffic_lightening_system\application.c
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[v _pin1 pin1 `S27  1 e 1 0 ]
+"10
+[v _ret ret `uc  1 e 1 0 ]
+"166 C:\Program Files\Microchip\xc8\v2.46\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"414
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1664
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"3 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task1\traffic_lightening_system\mcal_layer/gpio_module/gpio.c
+[v _ports ports `[5]*.39VEuc  1 e 10 0 ]
+"4
+[v _trises trises `[5]*.39VEuc  1 e 10 0 ]
+"11 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task1\traffic_lightening_system\application.c
+[v _main main `(i  1 e 2 0 ]
+{
+"31
+[v main@i_72 i `uc  1 a 1 4 ]
+"16
+[v main@i i `uc  1 a 1 3 ]
+"38
+} 0
+"39
+[v _initialization initialization `(v  1 e 1 0 ]
+{
+"41
+} 0
+"109 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task1\traffic_lightening_system\mcal_layer/gpio_module/gpio.c
+[v _gpio_port_initialize gpio_port_initialize `(uc  1 e 1 0 ]
+{
+[v gpio_port_initialize@gpio_port gpio_port `uc  1 a 1 wreg ]
+"110
+[v gpio_port_initialize@ret ret `uc  1 a 1 9 ]
+"109
+[v gpio_port_initialize@gpio_port gpio_port `uc  1 a 1 wreg ]
+[v gpio_port_initialize@gpio_directions gpio_directions `uc  1 p 1 6 ]
+[v gpio_port_initialize@gpio_logics gpio_logics `uc  1 p 1 7 ]
+[v gpio_port_initialize@gpio_port gpio_port `uc  1 a 1 8 ]
+"117
+} 0
+"144
+[v _gpio_port_set_logics gpio_port_set_logics `(uc  1 e 1 0 ]
+{
+[v gpio_port_set_logics@gpio_port gpio_port `uc  1 a 1 wreg ]
+"145
+[v gpio_port_set_logics@ret ret `uc  1 a 1 4 ]
+"144
+[v gpio_port_set_logics@gpio_port gpio_port `uc  1 a 1 wreg ]
+[v gpio_port_set_logics@gpio_logics gpio_logics `uc  1 p 1 0 ]
+[v gpio_port_set_logics@gpio_port gpio_port `uc  1 a 1 5 ]
+"152
+} 0
+"120
+[v _gpio_port_set_directions gpio_port_set_directions `(uc  1 e 1 0 ]
+{
+[v gpio_port_set_directions@gpio_port gpio_port `uc  1 a 1 wreg ]
+"121
+[v gpio_port_set_directions@ret ret `uc  1 a 1 4 ]
+"120
+[v gpio_port_set_directions@gpio_port gpio_port `uc  1 a 1 wreg ]
+[v gpio_port_set_directions@gpio_directions gpio_directions `uc  1 p 1 0 ]
+[v gpio_port_set_directions@gpio_port gpio_port `uc  1 a 1 5 ]
+"128
+} 0
+"51
+[v _gpio_pin_set_logic gpio_pin_set_logic `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[v gpio_pin_set_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+"52
+[v gpio_pin_set_logic@ret ret `uc  1 a 1 5 ]
+"51
+[v gpio_pin_set_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+[v gpio_pin_set_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 6 ]
+"68
+} 0
