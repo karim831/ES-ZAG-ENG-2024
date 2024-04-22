@@ -238,7 +238,7 @@ application.c
 39 65D 0 CODE 0
 40 65D 0 CODE 0
 41 668 0 CODE 0
-mcal_layer/gpio_module/gpio.c
+../../mcal_layer/gpio_module/gpio.c
 109 691 0 CODE 0
 110 692 0 CODE 0
 111 692 0 CODE 0

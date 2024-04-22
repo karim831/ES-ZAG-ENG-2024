@@ -7,11 +7,11 @@
 	;
 	; Compiler options:
 	;
-	; -q --opt=none --chip=16f887 application.c mcal_layer/configuration.c \
-	; mcal_layer/gpio_module/gpio.c -oapplication.hex \
-	; --objdir=dist/default/production --outdir=dist/default/production \
-	; -L--fixupoverflow=error --std=c99 --callgraph=none --warn=-3 \
-	; --errformat=%f:%l:%c: error: (%n) %s \
+	; -q --opt=none --chip=16f887 application.c \
+	; ../../mcal_layer/configuration.c ../../mcal_layer/gpio_module/gpio.c \
+	; -oapplication.hex --objdir=dist/default/production \
+	; --outdir=dist/default/production -L--fixupoverflow=error --std=c99 \
+	; --callgraph=none --warn=-3 --errformat=%f:%l:%c: error: (%n) %s \
 	; --warnformat=%f:%l:%c: warning: (%n) %s \
 	; --msgformat=%f:%l:%c: advisory: (%n) %s
 	;

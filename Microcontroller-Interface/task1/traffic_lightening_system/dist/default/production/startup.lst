@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                                           Tue Apr 16 01:07:27 2024
+                                                                                                           Tue Apr 23 01:27:14 2024
 
 
      1                           	processor	16F887
@@ -45,11 +45,11 @@ Microchip MPLAB XC8 Assembler V2.46 build 20240104201356
     39                           ;
     40                           ; Compiler options:
     41                           ;
-    42                           ; -q --opt=none --chip=16f887 application.c mcal_layer/configuration.c \
-    43                           ; mcal_layer/gpio_module/gpio.c -oapplication.hex \
-    44                           ; --objdir=dist/default/production --outdir=dist/default/production \
-    45                           ; -L--fixupoverflow=error --std=c99 --callgraph=none --warn=-3 \
-    46                           ; --errformat=%f:%l:%c: error: (%n) %s \
+    42                           ; -q --opt=none --chip=16f887 application.c \
+    43                           ; ../../mcal_layer/configuration.c ../../mcal_layer/gpio_module/gpio.c \
+    44                           ; -oapplication.hex --objdir=dist/default/production \
+    45                           ; --outdir=dist/default/production -L--fixupoverflow=error --std=c99 \
+    46                           ; --callgraph=none --warn=-3 --errformat=%f:%l:%c: error: (%n) %s \
     47                           ; --warnformat=%f:%l:%c: warning: (%n) %s \
     48                           ; --msgformat=%f:%l:%c: advisory: (%n) %s
     49                           ;
@@ -93,7 +93,7 @@ Microchip MPLAB XC8 Assembler V2.46 build 20240104201356
 
 
 Microchip Technology PIC Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                               Tue Apr 16 01:07:27 2024
+Symbol Table                                                                                               Tue Apr 23 01:27:14 2024
 
                ___sp 0000                 _main 0754                 start 0000           ___stack_hi 0000  
          ___stack_lo 0000       ___int_stack_hi 0000       ___int_stack_lo 0000  start_initialization 07EE  

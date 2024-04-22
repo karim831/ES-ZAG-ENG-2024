@@ -19,7 +19,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _TRISD `Vuc ~T0 @X0 0 e@136 ]
 "1664
 [v _TRISE `Vuc ~T0 @X0 0 e@137 ]
-"61 mcal_layer/gpio_module/gpio.h
+"61 ../../mcal_layer/gpio_module/gpio.h
 [s S145 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S145 . port pin direction logic ]
 "60
@@ -189,7 +189,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" EECON1 equ 018Ch ;# ">
 "3546
 [; <" EECON2 equ 018Dh ;# ">
-"3 mcal_layer/gpio_module/gpio.c
+"3 ../../mcal_layer/gpio_module/gpio.c
 [v _ports `*Vuc ~T0 @X0 -> 5 `i e ]
 [i _ports
 :U ..

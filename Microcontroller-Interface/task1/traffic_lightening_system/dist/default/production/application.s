@@ -574,7 +574,7 @@ EECON2 equ 018Dh ;#
 psect	idataBANK0,class=CODE,space=0,delta=2,noexec
 global __pidataBANK0
 __pidataBANK0:
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	4
 
 ;initializer for _trises
@@ -672,13 +672,13 @@ __initialization:
 psect	dataBANK0,class=BANK0,space=1,noexec
 global __pdataBANK0
 __pdataBANK0:
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	4
 _trises:
        ds      10
 
 psect	dataBANK0
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	3
 _ports:
        ds      10
@@ -1262,7 +1262,7 @@ GLOBAL	__end_of_initialization
 
 ;; *************** function _gpio_port_initialize *****************
 ;; Defined at:
-;;		line 109 in file "mcal_layer/gpio_module/gpio.c"
+;;		line 109 in file "../../mcal_layer/gpio_module/gpio.c"
 ;; Parameters:    Size  Location     Type
 ;;  gpio_port       1    wreg     unsigned char 
 ;;  gpio_directi    1    6[COMMON] unsigned char 
@@ -1294,12 +1294,12 @@ GLOBAL	__end_of_initialization
 ;; This function uses a non-reentrant model
 ;;
 psect	text2,local,class=CODE,delta=2,merge=1,group=0
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	109
 global __ptext2
 __ptext2:	;psect for function _gpio_port_initialize
 psect	text2
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	109
 	
 _gpio_port_initialize:	
@@ -1357,7 +1357,7 @@ GLOBAL	__end_of_gpio_port_initialize
 
 ;; *************** function _gpio_port_set_logics *****************
 ;; Defined at:
-;;		line 144 in file "mcal_layer/gpio_module/gpio.c"
+;;		line 144 in file "../../mcal_layer/gpio_module/gpio.c"
 ;; Parameters:    Size  Location     Type
 ;;  gpio_port       1    wreg     unsigned char 
 ;;  gpio_logics     1    0[COMMON] unsigned char 
@@ -1390,7 +1390,7 @@ psect	text3,local,class=CODE,delta=2,merge=1,group=0
 global __ptext3
 __ptext3:	;psect for function _gpio_port_set_logics
 psect	text3
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	144
 	
 _gpio_port_set_logics:	
@@ -1457,7 +1457,7 @@ GLOBAL	__end_of_gpio_port_set_logics
 
 ;; *************** function _gpio_port_set_directions *****************
 ;; Defined at:
-;;		line 120 in file "mcal_layer/gpio_module/gpio.c"
+;;		line 120 in file "../../mcal_layer/gpio_module/gpio.c"
 ;; Parameters:    Size  Location     Type
 ;;  gpio_port       1    wreg     unsigned char 
 ;;  gpio_directi    1    0[COMMON] unsigned char 
@@ -1490,7 +1490,7 @@ psect	text4,local,class=CODE,delta=2,merge=1,group=0
 global __ptext4
 __ptext4:	;psect for function _gpio_port_set_directions
 psect	text4
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	120
 	
 _gpio_port_set_directions:	
@@ -1557,7 +1557,7 @@ GLOBAL	__end_of_gpio_port_set_directions
 
 ;; *************** function _gpio_pin_set_logic *****************
 ;; Defined at:
-;;		line 51 in file "mcal_layer/gpio_module/gpio.c"
+;;		line 51 in file "../../mcal_layer/gpio_module/gpio.c"
 ;; Parameters:    Size  Location     Type
 ;;  _gpio_pin       1    wreg     PTR struct .
 ;;		 -> pin1(1), 
@@ -1592,7 +1592,7 @@ psect	text5,local,class=CODE,delta=2,merge=1,group=0
 global __ptext5
 __ptext5:	;psect for function _gpio_pin_set_logic
 psect	text5
-	file	"mcal_layer/gpio_module/gpio.c"
+	file	"../../mcal_layer/gpio_module/gpio.c"
 	line	51
 	
 _gpio_pin_set_logic:	
