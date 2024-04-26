@@ -6,6 +6,8 @@
 #ifndef _GPIO_CONFIG_H_
 #define _GPIO_CONFIG_H_
 
-/*  GPIO_CONFIGURATION  */
+/*  section : includes  */
+#include "../std_libraries.h"
+/*  section : macro declaration  */
 #define GPIO_CONFIG     CONFIG_ENABLE  
 #endif

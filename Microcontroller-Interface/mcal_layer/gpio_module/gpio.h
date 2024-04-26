@@ -6,7 +6,6 @@
 #define _GPIO_H_    
 
 /*  section :   includes */
-#include "../std_libraries.h"
 #include "gpio_config.h"
 /*  section :   macro_declarations */
 #define     GPIO_MASK0              (uint8)0x01
@@ -52,7 +51,7 @@
 #define GPIO_SET_BIT(REGISTER,BIT_INDEX)    ((REGISTER)|=(GPIO_MASK0<<(BIT_INDEX)))
 #define GPIO_CLEAR_BIT(REGISTER,BIT_INDEX)  ((REGISTER)&=(~(GPIO_MASK0<<(BIT_INDEX))))
 #define GPIO_TOGGLE_BIT(REGISTER,BIT_INDEX) ((REGISTER)^=(GPIO_MASK0<<(BIT_INDEX)))
-#define GPIO_READ_BIT(REGISTER,BIT_INDEX)   (((REGISTER)>>(BIT_INDEX))&(BIT_INDEX))
+#define GPIO_READ_BIT(REGISTER,BIT_INDEX)   (((REGISTER)>>(BIT_INDEX))&(GPIO_MASK0))
 
 #define GPIO_CLEAR_REG(REGISTER)           ((REGISTER)&=(GPIO_EMPTY_REG))
 #define GPIO_TOGGLE_REG(REGISTER)          ((REGISTER)^=(GPIO_COMPLETE_REG))

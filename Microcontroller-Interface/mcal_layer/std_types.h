@@ -20,11 +20,14 @@
 
 #define     STD_RETURN_TYPE     uint8
 
-#define     E_NOT_OK            0x00
-#define     E_OK                0x01
+#define     E_NOT_OK            (uint8)0x00
+#define     E_OK                (uint8)0x01
 
-#define     CONFIG_DISABLE      0x00
-#define     CONFIG_ENBALE       0x01
+#define     CONFIG_DISABLE      (uint8)0x00
+#define     CONFIG_ENBALE       (uint8)0x01
+
+#define     LOW                 (uint8)0x00
+#define     HIGH                (uint8)0x01
    
 #endif	/* STD_TYPES_H */
 

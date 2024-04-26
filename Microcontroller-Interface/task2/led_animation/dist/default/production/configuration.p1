@@ -1,0 +1,25 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"6 ../../mcal_layer/configuration.c
+[p x FOSC  =  HS         ]
+"7
+[p x WDTE  =  OFF        ]
+"8
+[p x PWRTE  =  OFF       ]
+"9
+[p x MCLRE  =  ON        ]
+"10
+[p x CP  =  OFF          ]
+"11
+[p x CPD  =  OFF         ]
+"12
+[p x BOREN  =  OFF       ]
+"13
+[p x IESO  =  OFF        ]
+"14
+[p x FCMEN  =  OFF       ]
+"15
+[p x LVP  =  OFF         ]
+"18
+[p x BOR4V  =  BOR21V    ]
+"19
+[p x WRT  =  OFF         ]
