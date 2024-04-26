@@ -1,6 +1,6 @@
 <circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="MCU" CircId="p16F887-1" mainComp="false" Show_id="true" Show_Val="false" Pos="580,504" rotation="0" hflip="1" vflip="1" label="p16F887-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" varList="PORTB/0x0006/uint8,TRISB/0x0086/uint8" Frequency="8 MHz" Program="led_animation/dist/default/production/application.hex" Auto_Load="true" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+<item itemtype="MCU" CircId="p16F887-1" mainComp="false" Show_id="true" Show_Val="false" Pos="580,504" rotation="0" hflip="1" vflip="1" label="p16F887-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" varList="PORTB/0x0006/uint8,TRISB/0x0086/uint8,PORTC/0x0007/uint8,TRISC/0x0087/uint8,TRISD/0x0088/uint8" Frequency="8 MHz" Program="led_animation/dist/default/production/application.hex" Auto_Load="true" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
 
 <item itemtype="Led" CircId="Led-25" mainComp="false" Show_id="false" Show_Val="false" Pos="688,588" rotation="90" hflip="1" vflip="1" label="Led-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
@@ -36,9 +36,9 @@
 
 <item itemtype="Led" CircId="Led-59" mainComp="false" Show_id="false" Show_Val="false" Pos="824,588" rotation="90" hflip="1" vflip="1" label="Led-59" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
-<item itemtype="Fixed Voltage" CircId="Fixed Voltage-96" mainComp="false" Show_id="false" Show_Val="false" Pos="460,544" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-96" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-96" mainComp="false" Show_id="false" Show_Val="false" Pos="460,544" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-96" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
 
-<item itemtype="SwitchDip" CircId="SwitchDip-97" mainComp="false" Show_id="false" Show_Val="false" Pos="444,600" rotation="90" hflip="1" vflip="1" label="SwitchDip-97" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="2 _Switches" State="255" />
+<item itemtype="SwitchDip" CircId="SwitchDip-97" mainComp="false" Show_id="false" Show_Val="false" Pos="444,600" rotation="90" hflip="1" vflip="1" label="SwitchDip-97" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="2 _Switches" State="252" />
 
 <item itemtype="Resistor" CircId="Resistor-100" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="460,688" rotation="90" hflip="1" vflip="1" label="Resistor-100" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
 
@@ -98,8 +98,6 @@
 
 <item itemtype="Connector" uid="Connector-70" startpinid="Led-55-lPin" endpinid="p16F887-1-PORTB6" pointList="892,572,892,520,636,520" />
 
-<item itemtype="Connector" uid="Connector-71" startpinid="p16F887-1-PORTB7" endpinid="Led-52-lPin" pointList="636,512,928,512,928,572" />
-
 <item itemtype="Connector" uid="Connector-29" startpinid="Ground-28-Gnd" endpinid="Node-103-0" pointList="688,748,688,736" />
 
 <item itemtype="Connector" uid="Connector-75" startpinid="Resistor-58-rPin" endpinid="Node-94-0" pointList="928,656,928,672,892,672" />
@@ -132,8 +130,6 @@
 
 <item itemtype="Connector" uid="Connector-102" startpinid="Resistor-100-rPin" endpinid="Node-108-0" pointList="460,704,460,736,492,736" />
 
-<item itemtype="Connector" uid="Connector-104" startpinid="Node-103-2" endpinid="Node-76-0" pointList="688,736,688,672" />
-
 <item itemtype="Connector" uid="Connector-107" startpinid="Resistor-105-rPin" endpinid="Node-108-1" pointList="492,700,492,736" />
 
 <item itemtype="Connector" uid="Connector-109" startpinid="Node-108-2" endpinid="Node-103-1" pointList="492,736,688,736" />
@@ -155,5 +151,9 @@
 <item itemtype="Connector" uid="Connector-140" startpinid="Node-139-2" endpinid="SwitchDip-97-switch0-pinN" pointList="492,624,468,624,468,616" />
 
 <item itemtype="Connector" uid="Connector-141" startpinid="Node-139-1" endpinid="Resistor-105-lPin" pointList="492,624,492,668" />
+
+<item itemtype="Connector" uid="Connector-104" startpinid="Node-103-2" endpinid="Node-76-0" pointList="688,736,688,672" />
+
+<item itemtype="Connector" uid="Connector-71" startpinid="p16F887-1-PORTB7" endpinid="Led-52-lPin" pointList="636,512,928,512,928,572" />
 
 </circuit>
