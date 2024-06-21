@@ -23,8 +23,11 @@
 
 
 /*  section : macro function declaration    */
+#define INTERRUPT_GIE_READ()                    (INTCONbits.GIE)
 #define INTERRUPT_GIE_DISABLE()                 (INTCONbits.GIE  = (uint8)0x00)
 #define INTERRUPT_GIE_ENABLE()                  (INTCONbits.GIE  = (uint8)0x01)
+
+#define INTERUPT_PIE_READ()                     (INTCONbits.PEIE)
 #define INTERRUPT_PEIE_DISABLE()                (INTCONbits.PEIE = (uint8)0x00)
 #define INTERRUPT_PEIE_ENABLE()                 (INTCONbits.PEIE = (uint8)0x01)
 

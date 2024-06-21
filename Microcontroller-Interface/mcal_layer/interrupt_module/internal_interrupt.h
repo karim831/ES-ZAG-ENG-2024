@@ -4,6 +4,7 @@
 */
 
 #ifndef _INTERNAL_INTERRUPT_H_
-#define _EXTERNAL_INTERRUPT_H_
-
+#define _INTERNAL_INTERRUPT_H_
+/*       includes       */
+#include "interrupt_config.h"
 #endif
