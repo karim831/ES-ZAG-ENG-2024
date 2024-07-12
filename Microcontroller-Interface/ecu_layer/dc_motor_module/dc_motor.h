@@ -25,4 +25,5 @@ typedef struct{
 STD_RETURN_TYPE dc_motor_init(dc_motor_t *_dc_motor);
 STD_RETURN_TYPE dc_motor_turn_cw(dc_motor_t *_dc_motor);
 STD_RETURN_TYPE dc_motor_turn_ccw(dc_motor_t *_dc_motor);
+STD_RETURN_TYPE dc_motor_stop(dc_motor_t *_dc_motor);
 #endif

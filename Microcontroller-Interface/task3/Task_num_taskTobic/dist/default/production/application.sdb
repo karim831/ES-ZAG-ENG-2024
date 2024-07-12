@@ -1,0 +1,342 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"28 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[e E1798 . `uc
+SWITCH_PULL_DOWN 0
+SWITCH_PULL_UP 1
+]
+"6 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/switch_module/switch.c
+[e E1786 . `uc
+SWITCH_PULL_DOWN 0
+SWITCH_PULL_UP 1
+]
+"9 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/dc_motor_module/dc_motor.c
+[v _dc_motor_init dc_motor_init `(uc  1 e 1 0 ]
+"21
+[v _dc_motor_turn_cw dc_motor_turn_cw `(uc  1 e 1 0 ]
+"32
+[v _dc_motor_turn_ccw dc_motor_turn_ccw `(uc  1 e 1 0 ]
+"43
+[v _dc_motor_stop dc_motor_stop `(uc  1 e 1 0 ]
+"6 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/switch_module/switch.c
+[v _switch_init switch_init `(uc  1 e 1 0 ]
+"15
+[v _switch_read_status switch_read_status `(uc  1 e 1 0 ]
+"24 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/mcal_layer/gpio_module/gpio.c
+[v _gpio_pin_set_direction gpio_pin_set_direction `(uc  1 e 1 0 ]
+"57
+[v _gpio_pin_set_logic gpio_pin_set_logic `(uc  1 e 1 0 ]
+"81
+[v _gpio_pin_clear_logic gpio_pin_clear_logic `(uc  1 e 1 0 ]
+"93
+[v _gpio_pin_read_logic gpio_pin_read_logic `(uc  1 e 1 0 ]
+"117
+[v _gpio_port_set_directions gpio_port_set_directions `(uc  1 e 1 0 ]
+"141
+[v _gpio_port_set_logics gpio_port_set_logics `(uc  1 e 1 0 ]
+"34 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[v _main main `(i  1 e 2 0 ]
+"57
+[v _initialization initialization `(v  1 e 1 0 ]
+"77
+[v _application_stop_door application_stop_door `(uc  1 e 1 0 ]
+"86
+[v _application_open_door application_open_door `(uc  1 e 1 0 ]
+"95
+[v _application_close_door application_close_door `(uc  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/mcal_layer/gpio_module/gpio.c
+[v _ports ports `[5]*.39VEuc  1 e 10 0 ]
+"4
+[v _trises trises `[5]*.39VEuc  1 e 10 0 ]
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"7 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[v _push_button_pin push_button_pin `S27  1 e 1 0 ]
+"12
+[v _limit_switch_pin limit_switch_pin `S27  1 e 1 0 ]
+"17
+[v _dc_motor_pin0 dc_motor_pin0 `S27  1 e 1 0 ]
+"22
+[v _dc_motor_pin1 dc_motor_pin1 `S27  1 e 1 0 ]
+"28
+[s S33 . 2 `S27 1 pin 1 0 `E1798 1 op 1 1 ]
+[v _push_button push_button `S33  1 e 2 0 ]
+[v _limit_switch limit_switch `S33  1 e 2 0 ]
+"29
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v _dc_motor dc_motor `S36  1 e 2 0 ]
+"31
+[v _push_button_status push_button_status `uc  1 e 1 0 ]
+[v _limit_switch_status limit_switch_status `uc  1 e 1 0 ]
+"33
+[v _ret ret `uc  1 e 1 0 ]
+"166 C:\Program Files\Microchip\xc8\v2.46\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"414
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1664
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"34 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[v _main main `(i  1 e 2 0 ]
+{
+"46
+[v main@tmp tmp `uc  1 a 1 13 ]
+"55
+} 0
+"15 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/switch_module/switch.c
+[v _switch_read_status switch_read_status `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S33 . 2 `S27 1 pin 1 0 `E1798 1 op 1 1 ]
+[v switch_read_status@_switch_obj _switch_obj `*.4S33  1 a 1 wreg ]
+"16
+[v switch_read_status@ret ret `uc  1 a 1 11 ]
+"15
+[v switch_read_status@_switch_obj _switch_obj `*.4S33  1 a 1 wreg ]
+[v switch_read_status@_status _status `*.4uc  1 p 1 8 ]
+[v switch_read_status@_switch_obj _switch_obj `*.4S33  1 a 1 12 ]
+"37
+} 0
+"93 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/mcal_layer/gpio_module/gpio.c
+[v _gpio_pin_read_logic gpio_pin_read_logic `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[v gpio_pin_read_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+"94
+[v gpio_pin_read_logic@ret ret `uc  1 a 1 6 ]
+"93
+[v gpio_pin_read_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+[v gpio_pin_read_logic@_gpio_logic _gpio_logic `*.4uc  1 p 1 0 ]
+[v gpio_pin_read_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 7 ]
+"101
+} 0
+"57 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[v _initialization initialization `(v  1 e 1 0 ]
+{
+"74
+} 0
+"6 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/switch_module/switch.c
+[v _switch_init switch_init `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S33 . 2 `S27 1 pin 1 0 `E1798 1 op 1 1 ]
+[v switch_init@_switch_obj _switch_obj `*.4S33  1 a 1 wreg ]
+"7
+[v switch_init@ret ret `uc  1 a 1 7 ]
+"6
+[v switch_init@_switch_obj _switch_obj `*.4S33  1 a 1 wreg ]
+[v switch_init@_switch_obj _switch_obj `*.4S33  1 a 1 8 ]
+"13
+} 0
+"9 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/dc_motor_module/dc_motor.c
+[v _dc_motor_init dc_motor_init `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v dc_motor_init@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+"10
+[v dc_motor_init@ret ret `uc  1 a 1 7 ]
+"9
+[v dc_motor_init@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+[v dc_motor_init@_dc_motor _dc_motor `*.4S36  1 a 1 8 ]
+"18
+} 0
+"24 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/mcal_layer/gpio_module/gpio.c
+[v _gpio_pin_set_direction gpio_pin_set_direction `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[v gpio_pin_set_direction@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+"25
+[v gpio_pin_set_direction@ret ret `uc  1 a 1 5 ]
+"24
+[v gpio_pin_set_direction@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+[v gpio_pin_set_direction@_gpio_pin _gpio_pin `*.4S27  1 a 1 6 ]
+"41
+} 0
+"77 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[v _application_stop_door application_stop_door `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v application_stop_door@_motor _motor `*.4S36  1 a 1 wreg ]
+"78
+[v application_stop_door@ret ret `uc  1 a 1 8 ]
+"77
+[v application_stop_door@_motor _motor `*.4S36  1 a 1 wreg ]
+[v application_stop_door@_motor _motor `*.4S36  1 a 1 9 ]
+"85
+} 0
+"43 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/dc_motor_module/dc_motor.c
+[v _dc_motor_stop dc_motor_stop `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v dc_motor_stop@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+[v dc_motor_stop@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+[v dc_motor_stop@_dc_motor _dc_motor `*.4S36  1 a 1 7 ]
+"52
+} 0
+"86 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[v _application_open_door application_open_door `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v application_open_door@_motor _motor `*.4S36  1 a 1 wreg ]
+"87
+[v application_open_door@ret ret `uc  1 a 1 8 ]
+"86
+[v application_open_door@_motor _motor `*.4S36  1 a 1 wreg ]
+[v application_open_door@_motor _motor `*.4S36  1 a 1 9 ]
+"94
+} 0
+"32 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/dc_motor_module/dc_motor.c
+[v _dc_motor_turn_ccw dc_motor_turn_ccw `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v dc_motor_turn_ccw@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+[v dc_motor_turn_ccw@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+[v dc_motor_turn_ccw@_dc_motor _dc_motor `*.4S36  1 a 1 7 ]
+"41
+} 0
+"95 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface\task3\Task_num_taskTobic\application.c
+[v _application_close_door application_close_door `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v application_close_door@_motor _motor `*.4S36  1 a 1 wreg ]
+"96
+[v application_close_door@ret ret `uc  1 a 1 8 ]
+"95
+[v application_close_door@_motor _motor `*.4S36  1 a 1 wreg ]
+[v application_close_door@_motor _motor `*.4S36  1 a 1 9 ]
+"103
+} 0
+"21 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/ecu_layer/dc_motor_module/dc_motor.c
+[v _dc_motor_turn_cw dc_motor_turn_cw `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[s S36 . 2 `S27 1 pin0 1 0 `S27 1 pin1 1 1 ]
+[v dc_motor_turn_cw@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+[v dc_motor_turn_cw@_dc_motor _dc_motor `*.4S36  1 a 1 wreg ]
+[v dc_motor_turn_cw@_dc_motor _dc_motor `*.4S36  1 a 1 7 ]
+"30
+} 0
+"57 D:\Studying\programming\embedded_system_tasks\ES-ZAG-ENG-2024\Microcontroller-Interface/mcal_layer/gpio_module/gpio.c
+[v _gpio_pin_set_logic gpio_pin_set_logic `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[v gpio_pin_set_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+"58
+[v gpio_pin_set_logic@ret ret `uc  1 a 1 5 ]
+"57
+[v gpio_pin_set_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+[v gpio_pin_set_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 6 ]
+"65
+} 0
+"81
+[v _gpio_pin_clear_logic gpio_pin_clear_logic `(uc  1 e 1 0 ]
+{
+[s S22 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 pin_description 1 0 ]
+[v gpio_pin_clear_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+"82
+[v gpio_pin_clear_logic@ret ret `uc  1 a 1 5 ]
+"81
+[v gpio_pin_clear_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 wreg ]
+[v gpio_pin_clear_logic@_gpio_pin _gpio_pin `*.4S27  1 a 1 6 ]
+"89
+} 0

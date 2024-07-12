@@ -1,0 +1,441 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"60 ./../../ecu_layer/switch_module/../../mcal_layer/gpio_module/gpio.h
+[s S145 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S145 . port pin direction logic ]
+"59
+[u S144 `S145 1 `uc 1 ]
+[n S144 . . pin_description ]
+"28 application.c
+[c E1798 0 1 .. ]
+[n E1798 . SWITCH_PULL_DOWN SWITCH_PULL_UP  ]
+"18 ./../../ecu_layer/switch_module/switch.h
+[s S147 `S144 1 `E1798 1 ]
+[n S147 . pin op ]
+"19 ./../../ecu_layer/dc_motor_module/dc_motor.h
+[s S146 `S144 1 `S144 1 ]
+[n S146 . pin0 pin1 ]
+[p mainexit ]
+"16 ././application.h
+[v _initialization `(v ~T0 @X0 0 ef ]
+"24 ./../../ecu_layer/switch_module/switch.h
+[v _switch_read_status `(uc ~T0 @X0 0 ef2`*S147`*uc ]
+"18 ././application.h
+[v _application_open_door `(uc ~T0 @X0 0 ef1`*S146 ]
+"19
+[v _application_close_door `(uc ~T0 @X0 0 ef1`*S146 ]
+"17
+[v _application_stop_door `(uc ~T0 @X0 0 ef1`*S146 ]
+"23 ./../../ecu_layer/switch_module/switch.h
+[v _switch_init `(uc ~T0 @X0 0 ef1`*S147 ]
+"25 ./../../ecu_layer/dc_motor_module/dc_motor.h
+[v _dc_motor_init `(uc ~T0 @X0 0 ef1`*S146 ]
+"28
+[v _dc_motor_stop `(uc ~T0 @X0 0 ef1`*S146 ]
+"27
+[v _dc_motor_turn_ccw `(uc ~T0 @X0 0 ef1`*S146 ]
+"26
+[v _dc_motor_turn_cw `(uc ~T0 @X0 0 ef1`*S146 ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\include\proc\pic16f887.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"230
+[; <" PORTB equ 06h ;# ">
+"292
+[; <" PORTC equ 07h ;# ">
+"354
+[; <" PORTD equ 08h ;# ">
+"416
+[; <" PORTE equ 09h ;# ">
+"454
+[; <" PCLATH equ 0Ah ;# ">
+"461
+[; <" INTCON equ 0Bh ;# ">
+"539
+[; <" PIR1 equ 0Ch ;# ">
+"595
+[; <" PIR2 equ 0Dh ;# ">
+"652
+[; <" TMR1 equ 0Eh ;# ">
+"659
+[; <" TMR1L equ 0Eh ;# ">
+"666
+[; <" TMR1H equ 0Fh ;# ">
+"673
+[; <" T1CON equ 010h ;# ">
+"767
+[; <" TMR2 equ 011h ;# ">
+"774
+[; <" T2CON equ 012h ;# ">
+"845
+[; <" SSPBUF equ 013h ;# ">
+"852
+[; <" SSPCON equ 014h ;# ">
+"922
+[; <" CCPR1 equ 015h ;# ">
+"929
+[; <" CCPR1L equ 015h ;# ">
+"936
+[; <" CCPR1H equ 016h ;# ">
+"943
+[; <" CCP1CON equ 017h ;# ">
+"1040
+[; <" RCSTA equ 018h ;# ">
+"1135
+[; <" TXREG equ 019h ;# ">
+"1142
+[; <" RCREG equ 01Ah ;# ">
+"1149
+[; <" CCPR2 equ 01Bh ;# ">
+"1156
+[; <" CCPR2L equ 01Bh ;# ">
+"1163
+[; <" CCPR2H equ 01Ch ;# ">
+"1170
+[; <" CCP2CON equ 01Dh ;# ">
+"1240
+[; <" ADRESH equ 01Eh ;# ">
+"1247
+[; <" ADCON0 equ 01Fh ;# ">
+"1348
+[; <" OPTION_REG equ 081h ;# ">
+"1418
+[; <" TRISA equ 085h ;# ">
+"1480
+[; <" TRISB equ 086h ;# ">
+"1542
+[; <" TRISC equ 087h ;# ">
+"1604
+[; <" TRISD equ 088h ;# ">
+"1666
+[; <" TRISE equ 089h ;# ">
+"1704
+[; <" PIE1 equ 08Ch ;# ">
+"1760
+[; <" PIE2 equ 08Dh ;# ">
+"1817
+[; <" PCON equ 08Eh ;# ">
+"1864
+[; <" OSCCON equ 08Fh ;# ">
+"1929
+[; <" OSCTUNE equ 090h ;# ">
+"1981
+[; <" SSPCON2 equ 091h ;# ">
+"2043
+[; <" PR2 equ 092h ;# ">
+"2050
+[; <" SSPADD equ 093h ;# ">
+"2057
+[; <" SSPMSK equ 093h ;# ">
+"2062
+[; <" MSK equ 093h ;# ">
+"2179
+[; <" SSPSTAT equ 094h ;# ">
+"2348
+[; <" WPUB equ 095h ;# ">
+"2418
+[; <" IOCB equ 096h ;# ">
+"2488
+[; <" VRCON equ 097h ;# ">
+"2558
+[; <" TXSTA equ 098h ;# ">
+"2644
+[; <" SPBRG equ 099h ;# ">
+"2706
+[; <" SPBRGH equ 09Ah ;# ">
+"2776
+[; <" PWM1CON equ 09Bh ;# ">
+"2846
+[; <" ECCPAS equ 09Ch ;# ">
+"2928
+[; <" PSTRCON equ 09Dh ;# ">
+"2972
+[; <" ADRESL equ 09Eh ;# ">
+"2979
+[; <" ADCON1 equ 09Fh ;# ">
+"3013
+[; <" WDTCON equ 0105h ;# ">
+"3066
+[; <" CM1CON0 equ 0107h ;# ">
+"3131
+[; <" CM2CON0 equ 0108h ;# ">
+"3196
+[; <" CM2CON1 equ 0109h ;# ">
+"3247
+[; <" EEDATA equ 010Ch ;# ">
+"3252
+[; <" EEDAT equ 010Ch ;# ">
+"3259
+[; <" EEADR equ 010Dh ;# ">
+"3266
+[; <" EEDATH equ 010Eh ;# ">
+"3273
+[; <" EEADRH equ 010Fh ;# ">
+"3280
+[; <" SRCON equ 0185h ;# ">
+"3337
+[; <" BAUDCTL equ 0187h ;# ">
+"3389
+[; <" ANSEL equ 0188h ;# ">
+"3451
+[; <" ANSELH equ 0189h ;# ">
+"3501
+[; <" EECON1 equ 018Ch ;# ">
+"3546
+[; <" EECON2 equ 018Dh ;# ">
+"7 application.c
+[v _push_button_pin `S144 ~T0 @X0 1 e ]
+[i _push_button_pin
+:U 0
+:U ..
+:U ..
+:U ..
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+..
+..
+..
+..
+]
+"12
+[v _limit_switch_pin `S144 ~T0 @X0 1 e ]
+[i _limit_switch_pin
+:U 0
+:U ..
+:U ..
+:U ..
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+..
+..
+..
+..
+]
+"17
+[v _dc_motor_pin0 `S144 ~T0 @X0 1 e ]
+[i _dc_motor_pin0
+:U 0
+:U ..
+:U ..
+:U ..
+-> -> 2 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+..
+..
+..
+..
+]
+"22
+[v _dc_motor_pin1 `S144 ~T0 @X0 1 e ]
+[i _dc_motor_pin1
+:U 0
+:U ..
+:U ..
+:U ..
+-> -> 2 `i `uc
+-> -> 7 `i `uc
+-> -> 0 `i `uc
+..
+..
+..
+..
+]
+"28
+[v _push_button `S147 ~T0 @X0 1 e ]
+[v _limit_switch `S147 ~T0 @X0 1 e ]
+"29
+[v _dc_motor `S146 ~T0 @X0 1 e ]
+"31
+[v _push_button_status `uc ~T0 @X0 1 e ]
+[v _limit_switch_status `uc ~T0 @X0 1 e ]
+"33
+[v _ret `uc ~T0 @X0 1 e ]
+[i _ret
+-> -> 0 `i `uc
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"34
+[v _main `(i ~T0 @X0 1 ef2`i`**uc ]
+{
+[e :U _main ]
+[v _argc `i ~T0 @X0 1 r1 ]
+[v _argv `**uc ~T0 @X0 1 r2 ]
+[f ]
+"35
+[e ( _initialization ..  ]
+"36
+[e :U 150 ]
+{
+"37
+[e :U 154 ]
+{
+"38
+[e = _ret ( _switch_read_status (2 , &U _push_button &U _push_button_status ]
+"39
+}
+[e $ == -> _push_button_status `i -> -> -> 0 `i `uc `i 154  ]
+[e :U 153 ]
+"40
+[e = _push_button_status -> -> 0 `i `uc ]
+"41
+[e = _ret ( _switch_read_status (2 , &U _limit_switch &U _limit_switch_status ]
+"42
+[e $ ! == -> _limit_switch_status `i -> 0 `i 155  ]
+"43
+[e = _ret ( _application_open_door (1 &U _dc_motor ]
+[e $U 156  ]
+"44
+[e :U 155 ]
+"45
+[e = _ret ( _application_close_door (1 &U _dc_motor ]
+[e :U 156 ]
+"46
+[v _tmp `uc ~T0 @X0 1 a ]
+[e = _tmp _limit_switch_status ]
+"47
+[e :U 159 ]
+{
+"48
+[e = _ret ( _switch_read_status (2 , &U _limit_switch &U _limit_switch_status ]
+"49
+}
+[e $ == -> _limit_switch_status `i -> _tmp `i 159  ]
+[e :U 158 ]
+"51
+[e = _ret ( _application_stop_door (1 &U _dc_motor ]
+"53
+}
+[e :U 149 ]
+[e $U 150  ]
+[e :U 151 ]
+"54
+[e ) -> 0 `i ]
+[e $UE 148  ]
+"55
+[e :UE 148 ]
+}
+"57
+[v _initialization `(v ~T0 @X0 1 ef ]
+{
+[e :U _initialization ]
+[f ]
+"58
+[e = . _push_button 0 _push_button_pin ]
+"59
+[e = . _push_button 1 . `E1798 1 ]
+"61
+[e = . _limit_switch 0 _limit_switch_pin ]
+"62
+[e = . _limit_switch 1 . `E1798 1 ]
+"64
+[e = . _dc_motor 0 _dc_motor_pin0 ]
+"65
+[e = . _dc_motor 1 _dc_motor_pin1 ]
+"67
+[e = _ret ( _switch_init (1 &U _push_button ]
+"68
+[e = _ret ( _switch_init (1 &U _limit_switch ]
+"70
+[e = _ret ( _dc_motor_init (1 &U _dc_motor ]
+"72
+[e = _push_button_status -> -> 0 `i `uc ]
+"73
+[e = _limit_switch_status -> -> 0 `i `uc ]
+"74
+[e :UE 160 ]
+}
+"77
+[v _application_stop_door `(uc ~T0 @X0 1 ef1`*S146 ]
+{
+[e :U _application_stop_door ]
+[v __motor `*S146 ~T0 @X0 1 r1 ]
+[f ]
+"78
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"79
+[e $ ! ! != __motor -> -> 0 `i `*S146 162  ]
+"80
+[e = _ret -> -> 0 `i `uc ]
+[e $U 163  ]
+"81
+[e :U 162 ]
+{
+"82
+[e ( _dc_motor_stop (1 __motor ]
+"83
+}
+[e :U 163 ]
+"84
+[e ) _ret ]
+[e $UE 161  ]
+"85
+[e :UE 161 ]
+}
+"86
+[v _application_open_door `(uc ~T0 @X0 1 ef1`*S146 ]
+{
+[e :U _application_open_door ]
+[v __motor `*S146 ~T0 @X0 1 r1 ]
+[f ]
+"87
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"88
+[e $ ! ! != __motor -> -> 0 `i `*S146 165  ]
+"89
+[e = _ret -> -> 0 `i `uc ]
+[e $U 166  ]
+"90
+[e :U 165 ]
+{
+"91
+[e ( _dc_motor_turn_ccw (1 __motor ]
+"92
+}
+[e :U 166 ]
+"93
+[e ) _ret ]
+[e $UE 164  ]
+"94
+[e :UE 164 ]
+}
+"95
+[v _application_close_door `(uc ~T0 @X0 1 ef1`*S146 ]
+{
+[e :U _application_close_door ]
+[v __motor `*S146 ~T0 @X0 1 r1 ]
+[f ]
+"96
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"97
+[e $ ! ! != __motor -> -> 0 `i `*S146 168  ]
+"98
+[e = _ret -> -> 0 `i `uc ]
+[e $U 169  ]
+"99
+[e :U 168 ]
+{
+"100
+[e ( _dc_motor_turn_cw (1 __motor ]
+"101
+}
+[e :U 169 ]
+"102
+[e ) _ret ]
+[e $UE 167  ]
+"103
+[e :UE 167 ]
+}

@@ -1,0 +1,649 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"166 C:\Program Files\Microchip\xc8\v2.46\pic\include\proc\pic16f887.h
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"228
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"290
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"352
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"414
+[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
+"1416
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"1478
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1540
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"1602
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"1664
+[v _TRISE `Vuc ~T0 @X0 0 e@137 ]
+"60 ../../mcal_layer/gpio_module/gpio.h
+[s S145 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S145 . port pin direction logic ]
+"59
+[u S144 `S145 1 `uc 1 ]
+[n S144 . . pin_description ]
+"71
+[v _gpio_pin_set_direction `(uc ~T0 @X0 0 ef1`*S144 ]
+"73
+[v _gpio_pin_set_logic `(uc ~T0 @X0 0 ef1`*S144 ]
+"75
+[v _gpio_pin_clear_logic `(uc ~T0 @X0 0 ef1`*S144 ]
+"79
+[v _gpio_port_set_directions `(uc ~T0 @X0 0 ef2`uc`uc ]
+"81
+[v _gpio_port_set_logics `(uc ~T0 @X0 0 ef2`uc`uc ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\include\proc\pic16f887.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"230
+[; <" PORTB equ 06h ;# ">
+"292
+[; <" PORTC equ 07h ;# ">
+"354
+[; <" PORTD equ 08h ;# ">
+"416
+[; <" PORTE equ 09h ;# ">
+"454
+[; <" PCLATH equ 0Ah ;# ">
+"461
+[; <" INTCON equ 0Bh ;# ">
+"539
+[; <" PIR1 equ 0Ch ;# ">
+"595
+[; <" PIR2 equ 0Dh ;# ">
+"652
+[; <" TMR1 equ 0Eh ;# ">
+"659
+[; <" TMR1L equ 0Eh ;# ">
+"666
+[; <" TMR1H equ 0Fh ;# ">
+"673
+[; <" T1CON equ 010h ;# ">
+"767
+[; <" TMR2 equ 011h ;# ">
+"774
+[; <" T2CON equ 012h ;# ">
+"845
+[; <" SSPBUF equ 013h ;# ">
+"852
+[; <" SSPCON equ 014h ;# ">
+"922
+[; <" CCPR1 equ 015h ;# ">
+"929
+[; <" CCPR1L equ 015h ;# ">
+"936
+[; <" CCPR1H equ 016h ;# ">
+"943
+[; <" CCP1CON equ 017h ;# ">
+"1040
+[; <" RCSTA equ 018h ;# ">
+"1135
+[; <" TXREG equ 019h ;# ">
+"1142
+[; <" RCREG equ 01Ah ;# ">
+"1149
+[; <" CCPR2 equ 01Bh ;# ">
+"1156
+[; <" CCPR2L equ 01Bh ;# ">
+"1163
+[; <" CCPR2H equ 01Ch ;# ">
+"1170
+[; <" CCP2CON equ 01Dh ;# ">
+"1240
+[; <" ADRESH equ 01Eh ;# ">
+"1247
+[; <" ADCON0 equ 01Fh ;# ">
+"1348
+[; <" OPTION_REG equ 081h ;# ">
+"1418
+[; <" TRISA equ 085h ;# ">
+"1480
+[; <" TRISB equ 086h ;# ">
+"1542
+[; <" TRISC equ 087h ;# ">
+"1604
+[; <" TRISD equ 088h ;# ">
+"1666
+[; <" TRISE equ 089h ;# ">
+"1704
+[; <" PIE1 equ 08Ch ;# ">
+"1760
+[; <" PIE2 equ 08Dh ;# ">
+"1817
+[; <" PCON equ 08Eh ;# ">
+"1864
+[; <" OSCCON equ 08Fh ;# ">
+"1929
+[; <" OSCTUNE equ 090h ;# ">
+"1981
+[; <" SSPCON2 equ 091h ;# ">
+"2043
+[; <" PR2 equ 092h ;# ">
+"2050
+[; <" SSPADD equ 093h ;# ">
+"2057
+[; <" SSPMSK equ 093h ;# ">
+"2062
+[; <" MSK equ 093h ;# ">
+"2179
+[; <" SSPSTAT equ 094h ;# ">
+"2348
+[; <" WPUB equ 095h ;# ">
+"2418
+[; <" IOCB equ 096h ;# ">
+"2488
+[; <" VRCON equ 097h ;# ">
+"2558
+[; <" TXSTA equ 098h ;# ">
+"2644
+[; <" SPBRG equ 099h ;# ">
+"2706
+[; <" SPBRGH equ 09Ah ;# ">
+"2776
+[; <" PWM1CON equ 09Bh ;# ">
+"2846
+[; <" ECCPAS equ 09Ch ;# ">
+"2928
+[; <" PSTRCON equ 09Dh ;# ">
+"2972
+[; <" ADRESL equ 09Eh ;# ">
+"2979
+[; <" ADCON1 equ 09Fh ;# ">
+"3013
+[; <" WDTCON equ 0105h ;# ">
+"3066
+[; <" CM1CON0 equ 0107h ;# ">
+"3131
+[; <" CM2CON0 equ 0108h ;# ">
+"3196
+[; <" CM2CON1 equ 0109h ;# ">
+"3247
+[; <" EEDATA equ 010Ch ;# ">
+"3252
+[; <" EEDAT equ 010Ch ;# ">
+"3259
+[; <" EEADR equ 010Dh ;# ">
+"3266
+[; <" EEDATH equ 010Eh ;# ">
+"3273
+[; <" EEADRH equ 010Fh ;# ">
+"3280
+[; <" SRCON equ 0185h ;# ">
+"3337
+[; <" BAUDCTL equ 0187h ;# ">
+"3389
+[; <" ANSEL equ 0188h ;# ">
+"3451
+[; <" ANSELH equ 0189h ;# ">
+"3501
+[; <" EECON1 equ 018Ch ;# ">
+"3546
+[; <" EECON2 equ 018Dh ;# ">
+"3 ../../mcal_layer/gpio_module/gpio.c
+[v _ports `*Vuc ~T0 @X0 -> 5 `i e ]
+[i _ports
+:U ..
+&U _PORTA
+&U _PORTB
+&U _PORTC
+&U _PORTD
+&U _PORTE
+..
+]
+"4
+[v _trises `*Vuc ~T0 @X0 -> 5 `i e ]
+[i _trises
+:U ..
+&U _TRISA
+&U _TRISB
+&U _TRISC
+&U _TRISD
+&U _TRISE
+..
+]
+"7
+[v _gpio_pin_initialize `(uc ~T0 @X0 1 ef1`*S144 ]
+{
+[e :U _gpio_pin_initialize ]
+[v __gpio_pin `*S144 ~T0 @X0 1 r1 ]
+[f ]
+"8
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"9
+[e $ ! ! != __gpio_pin -> -> 0 `i `*S144 147  ]
+"10
+[e = _ret -> -> 0 `i `uc ]
+[e $U 148  ]
+"11
+[e :U 147 ]
+{
+"12
+[e = _ret ( _gpio_pin_set_direction (1 __gpio_pin ]
+"13
+[e $ ! == -> . . *U __gpio_pin 0 3 `i -> -> -> 1 `i `uc `i 149  ]
+"14
+[e = _ret ( _gpio_pin_set_logic (1 __gpio_pin ]
+[e $U 150  ]
+"15
+[e :U 149 ]
+"16
+[e = _ret ( _gpio_pin_clear_logic (1 __gpio_pin ]
+[e :U 150 ]
+"17
+}
+[e :U 148 ]
+"18
+[e ) _ret ]
+[e $UE 146  ]
+"19
+[e :UE 146 ]
+}
+"24
+[v _gpio_pin_set_direction `(uc ~T0 @X0 1 ef1`*S144 ]
+{
+[e :U _gpio_pin_set_direction ]
+[v __gpio_pin `*S144 ~T0 @X0 1 r1 ]
+[f ]
+"25
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"26
+[e $ ! != __gpio_pin -> -> 0 `i `*S144 152  ]
+{
+"27
+[e $U 154  ]
+{
+"28
+[e :U 155 ]
+"29
+[e =| *U *U + &U _trises * -> . . *U __gpio_pin 0 0 `ux -> -> # *U &U _trises `ui `ux -> << -> -> -> 1 `i `uc `i -> . . *U __gpio_pin 0 1 `i `uc ]
+"30
+[e $U 153  ]
+"31
+[e :U 156 ]
+"32
+[e =& *U *U + &U _trises * -> . . *U __gpio_pin 0 0 `ux -> -> # *U &U _trises `ui `ux -> ~ << -> -> -> 1 `i `uc `i -> . . *U __gpio_pin 0 1 `i `uc ]
+"33
+[e $U 153  ]
+"34
+[e :U 157 ]
+"35
+[e = _ret -> -> 0 `i `uc ]
+"36
+}
+[e $U 153  ]
+[e :U 154 ]
+[e [\ . . *U __gpio_pin 0 2 , $ -> -> -> 1 `i `uc `i 155
+ , $ -> -> -> 0 `i `uc `i 156
+ 157 ]
+[e :U 153 ]
+"37
+}
+[e $U 158  ]
+"38
+[e :U 152 ]
+"39
+[e = _ret -> -> 0 `i `uc ]
+[e :U 158 ]
+"40
+[e ) _ret ]
+[e $UE 151  ]
+"41
+[e :UE 151 ]
+}
+"45
+[v _gpio_pin_read_direction `(uc ~T0 @X0 1 ef2`*S144`*uc ]
+{
+[e :U _gpio_pin_read_direction ]
+[v __gpio_pin `*S144 ~T0 @X0 1 r1 ]
+[v __gpio_direction `*uc ~T0 @X0 1 r2 ]
+[f ]
+"46
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"47
+[e $ ! && != __gpio_pin -> -> 0 `i `*S144 != __gpio_direction -> -> 0 `i `*uc 160  ]
+{
+"48
+[e = *U __gpio_direction -> & >> -> *U *U + &U _trises * -> . . *U __gpio_pin 0 0 `ux -> -> # *U &U _trises `ui `ux `i -> . . *U __gpio_pin 0 1 `i -> -> -> 1 `i `uc `i `uc ]
+"49
+}
+[e $U 161  ]
+"50
+[e :U 160 ]
+"51
+[e = _ret -> -> 0 `i `uc ]
+[e :U 161 ]
+"52
+[e ) _ret ]
+[e $UE 159  ]
+"53
+[e :UE 159 ]
+}
+"57
+[v _gpio_pin_set_logic `(uc ~T0 @X0 1 ef1`*S144 ]
+{
+[e :U _gpio_pin_set_logic ]
+[v __gpio_pin `*S144 ~T0 @X0 1 r1 ]
+[f ]
+"58
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"59
+[e $ ! != __gpio_pin -> -> 0 `i `*S144 163  ]
+{
+"60
+[e =| *U *U + &U _ports * -> . . *U __gpio_pin 0 0 `ux -> -> # *U &U _ports `ui `ux -> << -> -> -> 1 `i `uc `i -> . . *U __gpio_pin 0 1 `i `uc ]
+"61
+}
+[e $U 164  ]
+"62
+[e :U 163 ]
+"63
+[e = _ret -> -> 0 `i `uc ]
+[e :U 164 ]
+"64
+[e ) _ret ]
+[e $UE 162  ]
+"65
+[e :UE 162 ]
+}
+"69
+[v _gpio_pin_toggle_logic `(uc ~T0 @X0 1 ef1`*S144 ]
+{
+[e :U _gpio_pin_toggle_logic ]
+[v __gpio_pin `*S144 ~T0 @X0 1 r1 ]
+[f ]
+"70
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"71
+[e $ ! != __gpio_pin -> -> 0 `i `*S144 166  ]
+{
+"72
+[e =^ *U *U + &U _ports * -> . . *U __gpio_pin 0 0 `ux -> -> # *U &U _ports `ui `ux -> << -> -> -> 1 `i `uc `i -> . . *U __gpio_pin 0 1 `i `uc ]
+"73
+}
+[e $U 167  ]
+"74
+[e :U 166 ]
+"75
+[e = _ret -> -> 0 `i `uc ]
+[e :U 167 ]
+"76
+[e ) _ret ]
+[e $UE 165  ]
+"77
+[e :UE 165 ]
+}
+"81
+[v _gpio_pin_clear_logic `(uc ~T0 @X0 1 ef1`*S144 ]
+{
+[e :U _gpio_pin_clear_logic ]
+[v __gpio_pin `*S144 ~T0 @X0 1 r1 ]
+[f ]
+"82
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"83
+[e $ ! != __gpio_pin -> -> 0 `i `*S144 169  ]
+{
+"84
+[e =& *U *U + &U _ports * -> . . *U __gpio_pin 0 0 `ux -> -> # *U &U _ports `ui `ux -> ~ << -> -> -> 1 `i `uc `i -> . . *U __gpio_pin 0 1 `i `uc ]
+"85
+}
+[e $U 170  ]
+"86
+[e :U 169 ]
+"87
+[e = _ret -> -> 0 `i `uc ]
+[e :U 170 ]
+"88
+[e ) _ret ]
+[e $UE 168  ]
+"89
+[e :UE 168 ]
+}
+"93
+[v _gpio_pin_read_logic `(uc ~T0 @X0 1 ef2`*S144`*uc ]
+{
+[e :U _gpio_pin_read_logic ]
+[v __gpio_pin `*S144 ~T0 @X0 1 r1 ]
+[v __gpio_logic `*uc ~T0 @X0 1 r2 ]
+[f ]
+"94
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"95
+[e $ ! && != __gpio_pin -> -> 0 `i `*S144 != __gpio_logic -> -> 0 `i `*uc 172  ]
+{
+"96
+[e = *U __gpio_logic -> & >> -> *U *U + &U _ports * -> . . *U __gpio_pin 0 0 `ux -> -> # *U &U _ports `ui `ux `i -> . . *U __gpio_pin 0 1 `i -> -> -> 1 `i `uc `i `uc ]
+"97
+}
+[e $U 173  ]
+"98
+[e :U 172 ]
+"99
+[e = _ret -> -> 0 `i `uc ]
+[e :U 173 ]
+"100
+[e ) _ret ]
+[e $UE 171  ]
+"101
+[e :UE 171 ]
+}
+"106
+[v _gpio_port_initialize `(uc ~T0 @X0 1 ef3`uc`uc`uc ]
+{
+[e :U _gpio_port_initialize ]
+[v _gpio_port `uc ~T0 @X0 1 r1 ]
+[v _gpio_directions `uc ~T0 @X0 1 r2 ]
+[v _gpio_logics `uc ~T0 @X0 1 r3 ]
+[f ]
+"107
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"108
+[e = _ret ( _gpio_port_set_directions (2 , _gpio_port _gpio_directions ]
+"109
+[e $ ! != -> _ret `i -> 0 `i 175  ]
+"110
+[e = _ret ( _gpio_port_set_logics (2 , _gpio_port _gpio_logics ]
+[e $U 176  ]
+"111
+[e :U 175 ]
+"112
+[e = _ret -> -> 0 `i `uc ]
+[e :U 176 ]
+"113
+[e ) _ret ]
+[e $UE 174  ]
+"114
+[e :UE 174 ]
+}
+"117
+[v _gpio_port_set_directions `(uc ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _gpio_port_set_directions ]
+[v _gpio_port `uc ~T0 @X0 1 r1 ]
+[v _gpio_directions `uc ~T0 @X0 1 r2 ]
+[f ]
+"118
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"119
+[e $ ! && >= -> _gpio_port `i -> -> -> 0 `i `uc `i <= -> _gpio_port `i -> -> -> 4 `i `uc `i 178  ]
+{
+"120
+[e = *U *U + &U _trises * -> _gpio_port `ux -> -> # *U &U _trises `ui `ux _gpio_directions ]
+"121
+}
+[e $U 179  ]
+"122
+[e :U 178 ]
+"123
+[e = _ret -> -> 0 `i `uc ]
+[e :U 179 ]
+"124
+[e ) _ret ]
+[e $UE 177  ]
+"125
+[e :UE 177 ]
+}
+"129
+[v _gpio_port_read_directions `(uc ~T0 @X0 1 ef2`uc`*uc ]
+{
+[e :U _gpio_port_read_directions ]
+[v _gpio_port `uc ~T0 @X0 1 r1 ]
+[v __gpio_directions `*uc ~T0 @X0 1 r2 ]
+[f ]
+"130
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"131
+[e $ ! && && >= -> _gpio_port `i -> -> -> 0 `i `uc `i <= -> _gpio_port `i -> -> -> 4 `i `uc `i != __gpio_directions -> -> 0 `i `*uc 181  ]
+{
+"132
+[e = *U __gpio_directions *U *U + &U _trises * -> _gpio_port `ux -> -> # *U &U _trises `ui `ux ]
+"133
+}
+[e $U 182  ]
+"134
+[e :U 181 ]
+"135
+[e = _ret -> -> 0 `i `uc ]
+[e :U 182 ]
+"136
+[e ) _ret ]
+[e $UE 180  ]
+"137
+[e :UE 180 ]
+}
+"141
+[v _gpio_port_set_logics `(uc ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _gpio_port_set_logics ]
+[v _gpio_port `uc ~T0 @X0 1 r1 ]
+[v _gpio_logics `uc ~T0 @X0 1 r2 ]
+[f ]
+"142
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"143
+[e $ ! && >= -> _gpio_port `i -> -> -> 0 `i `uc `i <= -> _gpio_port `i -> -> -> 4 `i `uc `i 184  ]
+{
+"144
+[e = *U *U + &U _ports * -> _gpio_port `ux -> -> # *U &U _ports `ui `ux _gpio_logics ]
+"145
+}
+[e $U 185  ]
+"146
+[e :U 184 ]
+"147
+[e = _ret -> -> 0 `i `uc ]
+[e :U 185 ]
+"148
+[e ) _ret ]
+[e $UE 183  ]
+"149
+[e :UE 183 ]
+}
+"153
+[v _gpio_port_toggle_logics `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _gpio_port_toggle_logics ]
+[v _gpio_port `uc ~T0 @X0 1 r1 ]
+[f ]
+"154
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"155
+[e $ ! && >= -> _gpio_port `i -> -> -> 0 `i `uc `i <= -> _gpio_port `i -> -> -> 4 `i `uc `i 187  ]
+{
+"156
+[e =^ *U *U + &U _ports * -> _gpio_port `ux -> -> # *U &U _ports `ui `ux -> -> -> 255 `i `uc `uc ]
+"157
+}
+[e $U 188  ]
+"158
+[e :U 187 ]
+"159
+[e = _ret -> -> 0 `i `uc ]
+[e :U 188 ]
+"160
+[e ) _ret ]
+[e $UE 186  ]
+"161
+[e :UE 186 ]
+}
+"165
+[v _gpio_port_clear_logics `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _gpio_port_clear_logics ]
+[v _gpio_port `uc ~T0 @X0 1 r1 ]
+[f ]
+"166
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"167
+[e $ ! && >= -> _gpio_port `i -> -> -> 0 `i `uc `i <= -> _gpio_port `i -> -> -> 4 `i `uc `i 190  ]
+{
+"168
+[e =& *U *U + &U _ports * -> _gpio_port `ux -> -> # *U &U _ports `ui `ux -> -> -> 0 `i `uc `uc ]
+"169
+}
+[e $U 191  ]
+"170
+[e :U 190 ]
+"171
+[e = _ret -> -> 0 `i `uc ]
+[e :U 191 ]
+"172
+[e ) _ret ]
+[e $UE 189  ]
+"173
+[e :UE 189 ]
+}
+"177
+[v _gpio_port_read_logics `(uc ~T0 @X0 1 ef2`uc`*uc ]
+{
+[e :U _gpio_port_read_logics ]
+[v _gpio_port `uc ~T0 @X0 1 r1 ]
+[v __gpio_logics `*uc ~T0 @X0 1 r2 ]
+[f ]
+"178
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"179
+[e $ ! && && >= -> _gpio_port `i -> -> -> 0 `i `uc `i <= -> _gpio_port `i -> -> -> 4 `i `uc `i != __gpio_logics -> -> 0 `i `*uc 193  ]
+{
+"180
+[e = *U __gpio_logics *U *U + &U _ports * -> _gpio_port `ux -> -> # *U &U _ports `ui `ux ]
+"181
+}
+[e $U 194  ]
+"182
+[e :U 193 ]
+"183
+[e = _ret -> -> 0 `i `uc ]
+[e :U 194 ]
+"184
+[e ) _ret ]
+[e $UE 192  ]
+"185
+[e :UE 192 ]
+}

@@ -6,9 +6,15 @@ volatile uint8* trises[5] = {&TRISA,&TRISB,&TRISC,&TRISD,&TRISE};
 #if (GPIO_CONFIG == CONFIG_ENABLE)
 STD_RETURN_TYPE gpio_pin_initialize(gpio_pin_t* _gpio_pin){
     STD_RETURN_TYPE ret = E_OK;
-    ret = gpio_pin_set_direction(_gpio_pin);
-    if(ret)
-        ret = gpio_pin_set_logic(_gpio_pin);
+    if(!_gpio_pin)
+        ret = E_NOT_OK;
+    else{
+        ret = gpio_pin_set_direction(_gpio_pin);
+        if(_gpio_pin->logic == GPIO_LOGIC_HIGH)
+            ret = gpio_pin_set_logic(_gpio_pin);
+        else
+            ret = gpio_pin_clear_logic(_gpio_pin);
+    }
     return ret;
 }
 #endif
@@ -51,16 +57,7 @@ STD_RETURN_TYPE gpio_pin_read_direction(gpio_pin_t* _gpio_pin,uint8* _gpio_direc
 STD_RETURN_TYPE gpio_pin_set_logic(gpio_pin_t* _gpio_pin){
     STD_RETURN_TYPE ret = E_OK;
     if(_gpio_pin){
-        switch(_gpio_pin->logic){
-            case GPIO_LOGIC_LOW :
-                GPIO_CLEAR_BIT(*ports[_gpio_pin->port],_gpio_pin->pin);
-            break;
-            case GPIO_LOGIC_HIGH:
-                GPIO_SET_BIT(*ports[_gpio_pin->port],_gpio_pin->pin);
-            break;
-            default:
-                ret = E_NOT_OK;
-        }
+        GPIO_SET_BIT(*ports[_gpio_pin->port],_gpio_pin->pin);
     }
     else
         ret = E_NOT_OK;
